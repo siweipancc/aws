@@ -56,7 +56,7 @@ services:
       - postgres
       - redis
     restart: unless-stopped
-
+    user: "1000:1000"
   nginx:
     image: nginx:1.25-alpine
     container_name: laravel_nginx
