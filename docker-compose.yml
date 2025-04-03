@@ -56,11 +56,6 @@ services:
       - postgres
       - redis
     restart: unless-stopped
-    deploy:
-      resources:
-        limits:
-          cpus: '4'
-          memory: 4G
 
   nginx:
     image: nginx:1.25-alpine
@@ -76,11 +71,6 @@ services:
     depends_on:
       - php-fpm
     restart: unless-stopped
-    deploy:
-      resources:
-        limits:
-          cpus: '4'
-          memory: 2G
 
 volumes:
   postgres_data:
