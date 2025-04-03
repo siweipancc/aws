@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use JetBrains\PhpStorm\ArrayShape;
 
 class UserController extends Controller
 {
