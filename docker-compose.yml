@@ -40,7 +40,7 @@ services:
       dockerfile: docker/php/Dockerfile
     container_name: laravel_php
     volumes:
-      - ./:/var/www/html
+      - ./:/var/www/html:rw
       - ./docker/php/php.ini:/usr/local/etc/php/conf.d/custom.ini
     environment:
       - DB_HOST=postgres
